@@ -1,0 +1,103 @@
+.subscribe-wrapper{
+  position: relative;
+  &:after{
+    position: absolute;
+    content: '';
+    top: -405px;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1335px;
+    z-index: -1;
+    background: url("../img/bg/bg-lines.png"), url("../img/bg/bg-surfer.jpg");
+    background-repeat: repeat-y, no-repeat;
+    background-position: center, center;
+    background-size: auto, cover;
+  }
+}
+
+.subscribe{
+  max-width: 590px;
+  margin-top: 50px;
+  padding-top: 160px/2;
+  padding-bottom: 75px/2;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  @media (min-width: 1254px){
+    padding-top: 160px;
+    padding-bottom: 75px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &:before{
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: rgb(93, 168, 239);
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100px/2;
+    @media (min-width: 1254px){
+      height: 100px;
+    }
+  }
+}
+.title-desc{
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+.subscribe-form{
+  display: flex;
+}
+.subscribe__input{
+  color: rgba(51,51,51, 0.9);
+  font-family: 'League-Spartan-Bold', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  width: 590px;
+  height: 50px;
+  background-color: rgb(245, 245, 245);
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(97,97,97, 0.0);
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: 0.2s ease-in;
+
+  &:active, &:focus{
+    border: 1px solid rgba(97,97,97, 0.15);
+    outline: none;
+  }
+}
+.subscribe__submit {
+  background-color: rgb(93, 168, 239);
+  width: 50px;
+  flex: 0 0 50px;
+  height: 50px;
+  background-image: url('../img/controls/subscribe-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: initial;
+  text-indent: -1000px;
+  border: 0px none;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  &:hover{
+    background-color: lighten(#5da8ef, 5%);
+    outline: none;
+  }
+  &:focus{
+    background-color: darken(#5da8ef, 10%);
+    outline: none;
+  }
+
+}
+

@@ -1,0 +1,97 @@
+.club-description{
+  padding-top: 110px/2;
+  padding-bottom: 95px/2;
+  @media (min-width: 1254px) {
+    padding-top: 110px;
+    padding-bottom: 95px;
+    position: relative;
+  }
+}
+.club-description-wrapper{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.club-description__img{
+  width: 70%;
+  @media (min-width: 1254px) {
+    width: auto;
+  }
+}
+.club-description-video{
+  position: absolute;
+  width: 60%;
+  right: 0;
+  top: 45px;
+  z-index: 1;
+  @media (min-width: 1254px) {
+    width: auto;
+  }
+}
+.club-description-video__control{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: rgb(93, 168, 239);
+  box-shadow: -2.121px -2.121px 35px 0px rgba(0, 0, 0, 0.13);
+  width: 68px/2;
+  height: 68px/2;
+  @media (min-width: 1254px) {
+    width: 68px;
+    height: 68px;
+  }
+  img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-35%, -50%);
+    width: 35%;
+    @media (min-width: 1254px) {
+      width: auto;
+    }
+  }
+}
+.club-description__text{
+  margin-top: 90px;
+  max-width: 450px;
+  margin-bottom: 0px;
+  .desc-text;
+  @media (min-width: 855px) and (max-width: 1254px){
+    max-width: 340px;
+  }
+  @media (min-width: 1254px) {
+    width: 340px;
+    margin-left: 115px;
+    margin-top: 60px;
+    margin-bottom: 45px;
+  }
+}
+.club-description__link{
+  @media (min-width: 1254px) {
+    margin-left: 115px;
+  }
+}
+.read-more-link, a.read-more-link {
+  font-size: 9px;
+  font-family: 'League-Spartan-Bold', sans-serif;
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 5px;
+  position: relative;
+  padding-bottom: 10px;
+  &:after{
+    content: "";
+    background-color: rgb(93, 168, 239, 0.7);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+  }
+}
